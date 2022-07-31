@@ -1,10 +1,15 @@
-const Section1 = ()=>{
+const Section1 = (props)=>{
     return (
         <div className="section" id="section1">
             <h1>Section 1</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero saepe ratione fugit placeat ut soluta deserunt delectus ullam, laborum ipsam odit tenetur quae qui, alias officia beatae totam cumque quas? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit pariatur ullam dolore maxime sapiente totam iste eligendi, non necessitatibus, quisquam tempora consequatur dolorem iusto magnam reprehenderit? Ut provident repellat quae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit eveniet cum deleniti voluptatum? Aliquam, temporibus expedita iure optio adipisci molestias numquam, maxime deserunt, consequuntur explicabo corporis dicta cupiditate? Aliquid, ipsa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi cumque quisquam asperiores aperiam ut, dolorem provident necessitatibus minima perferendis libero. Quas quae facere quod sint voluptate accusantium mollitia natus tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, natus. Soluta voluptates iusto similique dolores, facere non exercitationem, accusamus aliquam libero incidunt, consectetur maiores corrupti repellat labore ratione dolor impedit.
-            </p>
+            <div className="pic-container">
+                <img className="pic" src={props.pic} alt="profile pic"/>
+            </div>
+            <div className="bio-container">
+                <p>
+                    Hi! My name is Maika and I'm a software engineer currently enrolled at General Assembly. I've always had a curiosity for software development and due to a rapidly evolving interest in the Web 3 space have made the leap into tech. Looking to create connections and continue to dive into tech while getting involved with the culture and bringing forward new ideas!
+                </p>
+            </div> 
         </div>
     )
 }

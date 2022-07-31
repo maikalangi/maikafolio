@@ -1,3 +1,4 @@
+import profile from './profile.jpg';
 import './App.css';
 import Navbar from './components/navigation.js';
 import Section1 from './components/section1.js';
@@ -8,7 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Navbar/>
-        <Section1/>
+        <Section1 pic={profile}/>
         <Section2/>
       </header>
     </div>
