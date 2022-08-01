@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 const Navbar =()=>{
     return (
         <div className="navBar">
-            <ul>
+            <ul className="navList">
                 <li>
                     <Link 
                         activeClass="active"
@@ -11,7 +11,7 @@ const Navbar =()=>{
                         spy={true}
                         smooth={true}
                         duration={500}>
-                            section 1
+                            Profile
                     </Link>
                 </li>
                 <li>
@@ -21,7 +21,17 @@ const Navbar =()=>{
                         spy={true}
                         smooth={true}
                         duration={500}>
-                            section 2
+                            Services
+                    </Link>
+                </li>
+                <li>
+                    <Link 
+                        activeClass="active"
+                        to="section3"
+                        spy={true}
+                        smooth={true}
+                        duration={500}>
+                            Connect
                     </Link>
                 </li>
             </ul>
