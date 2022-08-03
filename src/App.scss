@@ -1,16 +1,6 @@
+/*--------App--------*/
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -20,23 +10,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  // font-size: calc(10px + 2vmin);
+  font-size: 2vmax;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  padding: 0px 40px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
+/*--------Nav--------*/
 .navBar {
   justify-content: center;
   background-color: rgba($color: #000000, $alpha: .5);
@@ -49,29 +31,33 @@
   display: flex;
   list-style: none;
   justify-content: space-evenly;
-  width: 60%;
+  width: 100%;
+  padding: 0;
 }
-
+/*--------Sections--------*/
 .section {
-  width: 60%;
+  width: 95%;
 }
-
+/*--------Bio--------*/
 .bio-container {
   display: flex;
+  justify-content: space-evenly;
+  p {
+    width: 40vmax;
+  }
 }
 
 .pic {
-  width: 50vh;
+  width: 20vmax;
   border-radius: 1000px;
 }
-
+/*--------Projects--------*/
 #section2 {
   justify-content: center;
 }
 
 .projects {
-  width: 80vw;
-  justify-self: center;
+  width: 100%;
 }
 
 .projectList {
@@ -79,14 +65,14 @@
   display: flex;
   justify-content: space-between;
   li {
-    width: 30%;
+    width: 100%;
   }
 }
 
 .project-pic {
   width: 80%;
 }
-
+/*--------Connect--------*/
 .connect {
   a {
     color: white;
