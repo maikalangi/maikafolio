@@ -1,7 +1,7 @@
 const Section1 = (props)=>{
     return (
         <div className="section" id="section1">
-            <h3>Hi, I'm Maika</h3>
+            <h3 className="name">Maika Langi</h3>
                 <div className="bio-container">
                     <div className="pic-container">
                         <img 
