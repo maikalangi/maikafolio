@@ -1,3 +1,4 @@
+
 /*--------App--------*/
 .App {
   text-align: center;
@@ -25,6 +26,7 @@ ul {
   position: sticky;
   top: 0;
   width: 100%;
+  margin-bottom: 300px;
 }
 
 .navList {
@@ -43,12 +45,15 @@ ul {
 .name {
   font-family: 'Inspiration', cursive;
   font-size: 200px;
+  margin-bottom: 500px;
 }
 
 .bio-container {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 500px;
   p {
+    justify-self: flex-start;
     width: 40vmax;
   }
 }
@@ -61,14 +66,17 @@ ul {
 #section2 {
   justify-content: center;
 }
-
-.projectList {
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  margin: 10px 0px;
-  li {
-    padding: 5px;
+  
+  
+@media (max-width: 800px) {
+  .projectList {
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+    li {
+      padding: 5px;
+    }
   }
 }
 
@@ -83,30 +91,46 @@ ul {
   p {
     font-size: 2vw;
   }
+  
+
+  .project-pic {
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: 0 100%;
+    width: 100%;
+    height: 500px;
+    .project-pic:hover{
+      cursor: pointer;
+      object-position: 30px;
+    }
+  }
+  /*--------Connect--------*/
+  .connect {
+    a {
+      color: white;
+    }
+    a:link {
+      text-decoration: none;
+    }
+    ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+    }
+  }
+
 }
 
-.project-pic {
-  border-radius: 10px;
-  object-fit: cover;
-  object-position: 0 100%;
-  width: 100%;
-  height: 500px;
-  .project-pic:hover{
-    cursor: pointer;
-    object-position: 30px;
-  }
-}
-/*--------Connect--------*/
-.connect {
-  a {
-    color: white;
-  }
-  a:link {
-    text-decoration: none;
-  }
-  ul {
-    display: flex;
-    justify-content: space-around;
+@media (min-width: 800px) {
+
+/*--------Projects--------*/
+  .projectList {
     list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+    li {
+      padding: 5px;
+    }
   }
 }

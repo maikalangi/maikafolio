@@ -13,6 +13,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Navbar/>
+        <h3 className="name">Maika Langi</h3>
         <Section1 pic={profile}/>
         <Section2 
           bookfinder={bookfinder}
