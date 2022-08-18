@@ -5,6 +5,51 @@ const Section2 = (props)=>{
             <div className="projects">
                 <ul className="projectList">
                     <li>
+                        <h4>Compostr</h4>
+                        <div className="projectCard">
+                            <a href="https://master--tubular-starlight-f7d150.netlify.app/">
+                                <img 
+                                    className="project-pic" 
+                                    src={props.compostr} 
+                                    alt="project pic"
+                                />
+                            </a>
+                            <p>
+                                Web application addressing global climate change through composting. It provides introductory information on composting as well as a map for local compost sites and incentivizes individual composting through rewards.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>General Store</h4>
+                        <div className="projectCard">
+                            <a href="https://generalstoregs.netlify.app/">
+                                <img 
+                                    className="project-pic" 
+                                    src={props.gs} 
+                                    alt="project pic"
+                                />
+                            </a>
+                            <p>
+                                A fun app exercise to help customers find items they didn't even know they wanted or needed. A team project combining individual effort and git/Github version workflow with concepts learned on previous projects to develop site with CRUD functionality and Google Firebase authentication/authorization for distinct user accessibility such as admin, user, and visitor accesses
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Anū Handyman</h4>
+                        <div className="projectCard">
+                            <a href="https://anu-handyman.herokuapp.com/">
+                                <img 
+                                    className="project-pic" 
+                                    src={props.anu} 
+                                    alt="project pic"
+                                />
+                            </a>
+                            <p>
+                                Website showcasing handyman services and a contact page to reach the handyman
+                            </p>
+                        </div>
+                    </li>
+                    <li>
                         <h4>Book Finder</h4>
                         <div className="projectCard">
                             <a href="https://maikalangi.github.io/books-finder/">

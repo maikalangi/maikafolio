@@ -21,7 +21,7 @@ const Navbar =()=>{
                         spy={true}
                         smooth={true}
                         duration={500}>
-                            Services
+                            Projects
                     </Link>
                 </li>
                 <li>

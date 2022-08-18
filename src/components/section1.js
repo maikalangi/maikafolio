@@ -9,9 +9,12 @@ const Section1 = (props)=>{
                         alt="profile pic"
                     />
                 </div>
-                <div className="bio-container">
+                <div className="summary">
+                    <span>
+                        I believe success can come to good people who are able to be creative and collaborate
+                    </span>
                     <p>
-                        I'm a software engineer currently enrolled at General Assembly. I've always had a curiosity for software development and due to a rapidly evolving interest in the Web 3 space have made the leap into tech. Looking to create connections and continue to dive into tech while getting involved with the culture and bringing forward new ideas!
+                        I'm an ambitious front end developer with an appreciation for design functionality and an eager curiosity to continue developing my skills in back-end engineering. Over eight years of supportive leadership roles in various industries has given me experience in collaborating with people from different walks of life and consistently nurturing productive teams and compatible team environments. Looking to create connections and continue to dive into tech while getting involved with the culture and bringing forward new ideas!
                     </p>
                 </div> 
             </div>

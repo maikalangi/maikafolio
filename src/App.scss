@@ -2,18 +2,22 @@
 /*--------App--------*/
 .App {
   text-align: center;
-}
-
-.App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  // font-size: calc(10px + 2vmin);
   font-size: 2vmax;
   color: white;
+}
+
+.name {
+  font-family: 'Inspiration', cursive;
+  font-size: 20vmin;
+  width: 100%;
+  height: 100%;
+  margin: 30vh 0 30vh 0;
 }
 
 ul {
@@ -26,7 +30,7 @@ ul {
   position: sticky;
   top: 0;
   width: 100%;
-  margin-bottom: 300px;
+  // margin-bottom: 20vh;
 }
 
 .navList {
@@ -42,20 +46,36 @@ ul {
   margin: 20vh 0;
 }
 /*--------Bio--------*/
-.name {
-  font-family: 'Inspiration', cursive;
-  font-size: 200px;
-  margin-bottom: 500px;
+#section1 {
+  background-color: rgba($color: #000000, $alpha: .5);
+  width: 100%;
+  
 }
 
-.bio-container {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 500px;
-  p {
-    justify-self: flex-start;
-    width: 40vmax;
+.bio-container{
+  margin: 35vh 0 35vh 0;
+  align-items: center;
+}
+
+@media (min-width: 800px){
+  .bio-container {
+    display: flex;
+    justify-content: space-evenly;
   }
+}
+
+@media (max-width: 800px){
+  .bio-container {
+    display: column;
+  }
+}
+
+.summary {
+  margin: 5vmax;
+}
+
+.pic-container{
+  margin: 5vmax;
 }
 
 .pic {
@@ -65,17 +85,40 @@ ul {
 /*--------Projects--------*/
 #section2 {
   justify-content: center;
-}
-  
+  h3 {
+    margin-top: 100px;
+  }
+} 
   
 @media (max-width: 800px) {
   .projectList {
     list-style: none;
+    display: flex;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 10px 0px;
+    margin: 0;
+    li {
+      flex: 1 0 33.33%;
+      padding: 5px;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .projectList {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0;
     li {
       padding: 5px;
+      width: 30vw;
+    }
+    h4 {
+      font-size: 2vmin;
     }
   }
 }
@@ -91,46 +134,30 @@ ul {
   p {
     font-size: 2vw;
   }
-  
-
-  .project-pic {
-    border-radius: 10px;
-    object-fit: cover;
-    object-position: 0 100%;
-    width: 100%;
-    height: 500px;
-    .project-pic:hover{
-      cursor: pointer;
-      object-position: 30px;
-    }
-  }
-  /*--------Connect--------*/
-  .connect {
-    a {
-      color: white;
-    }
-    a:link {
-      text-decoration: none;
-    }
-    ul {
-      display: flex;
-      justify-content: space-around;
-      list-style: none;
-    }
-  }
-
 }
 
-@media (min-width: 800px) {
-
-/*--------Projects--------*/
-  .projectList {
-    list-style: none;
+.project-pic {
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: 0 100%;
+  width: 20vh;
+  height: 20vh;
+  .project-pic:hover{
+    cursor: pointer;
+    object-position: 30px;
+  }
+}
+/*--------Connect--------*/
+.connect {
+  a {
+    color: white;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  ul {
     display: flex;
-    justify-content: space-evenly;
-    margin: 10px 0px;
-    li {
-      padding: 5px;
-    }
+    justify-content: space-around;
+    list-style: none;
   }
 }
