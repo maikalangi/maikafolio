@@ -1,12 +1,14 @@
-import profile from './profile.jpg';
-import bookfinder from './bookfinder.png'
-import flowfi from './flowfi.png'
-import todo from './todo.png'
-import compostr from './compostr.png'
-import gs from './gs.png'
-import anu from './anu.png'
+import profile from './public/profile.jpg';
+import bookfinder from './public/bookfinder.png'
+import flowfi from './public/flowfi.png'
+import todo from './public/todo.png'
+import compostr from './public/compostr.png'
+import gs from './public/gs.png'
+import anu from './public/anu.png'
 import './App.scss';
 import Navbar from './components/navigation.js';
+import Fader from './components/fader';
+import Home from './components/home';
 import Section1 from './components/section1.js';
 import Section2 from './components/section2';
 import Section3 from './components/section3';
@@ -15,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <h3 className="name">Maika Langi</h3>
+      <Home />
       <Section1 pic={profile}/>
       <Section2 
         bookfinder={bookfinder}

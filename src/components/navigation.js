@@ -7,11 +7,21 @@ const Navbar =()=>{
                 <li>
                     <Link 
                         activeClass="active"
+                        to="home"
+                        spy={true}
+                        smooth={true}
+                        duration={500}>
+                            Home
+                    </Link>
+                </li>
+                <li>
+                    <Link 
+                        activeClass="active"
                         to="section1"
                         spy={true}
                         smooth={true}
                         duration={500}>
-                            Profile
+                            Bio
                     </Link>
                 </li>
                 <li>
