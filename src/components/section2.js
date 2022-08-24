@@ -7,7 +7,7 @@ const Section2 = (props)=>{
                     <li>
                         <h4>Compostr</h4>
                         <div className="projectCard">
-                            <a href="https://master--tubular-starlight-f7d150.netlify.app/">
+                            <a href="https://compostr.netlify.app/">
                                 <img 
                                     className="project-pic" 
                                     src={props.compostr} 
