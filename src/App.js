@@ -7,7 +7,6 @@ import gs from './public/gs.png'
 import anu from './public/anu.png'
 import './App.scss';
 import Navbar from './components/navigation.js';
-import Fader from './components/fader';
 import Home from './components/home';
 import Section1 from './components/section1.js';
 import Section2 from './components/section2';
