@@ -1,4 +1,6 @@
-Welcome to me Portfolio
+Welcome to my portfolio!
+
+
 Click the link below to check it out!
 
 
