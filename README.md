@@ -1,7 +1,4 @@
 Welcome to my portfolio!
 
 
-Click the link below to check it out!
-
-
-[Link](https://harmonious-caramel-a82bbd.netlify.app/)
+Click [here](http://www.maikalangi.com) to check it out!
