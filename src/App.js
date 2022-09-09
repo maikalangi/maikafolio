@@ -11,6 +11,10 @@ import Home from './components/home';
 import Section1 from './components/section1.js';
 import Section2 from './components/section2';
 import Section3 from './components/section3';
+import ReactGA from 'react-ga';
+
+const TRACKING_ID = 'G-EDN0G4C7EN'
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
   return (
