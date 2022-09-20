@@ -7,6 +7,16 @@ const Section3 = (props)=>{
         <div className="section" id="section3">
             <h3>Connect</h3>
             <div className="connect">
+                <form id="contact-form">
+                    <input type="hidden" name="contact_number"/>
+                    <label>Name</label>
+                    <input type="text" name="user_name"/>
+                    <label>Email</label>
+                    <input type="email" name="user_email"/>
+                    <label>Message</label>
+                    <textarea name="message" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Send"/>
+                </form>
                 <ul>
                     <li>
                         <a href="https://www.linkedin.com/in/maika-langi/"><FiLinkedin/></a>
