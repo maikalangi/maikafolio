@@ -8,13 +8,13 @@ const Section3 = (props)=>{
             <h3>Connect</h3>
             <div className="connect">
                 <form id="contact-form">
-                    <input type="hidden" name="contact_number"/>
-                    <label>Name</label>
-                    <input type="text" name="user_name"/>
-                    <label>Email</label>
-                    <input type="email" name="user_email"/>
-                    <label>Message</label>
-                    <textarea name="message" cols="30" rows="10"></textarea>
+                    <input type="hidden" name="contact_number" />
+                    {/* <label>Name</label> */}
+                    <input type="text" name="user_name" placeholder="Name"/>
+                    {/* <label>Email</label> */}
+                    <input type="email" name="user_email" placeholder="example@email.com"/>
+                    {/* <label>Message</label> */}
+                    <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
                     <input type="submit" value="Send"/>
                 </form>
                 <ul>
